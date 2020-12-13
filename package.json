@@ -1,0 +1,16 @@
+{
+  "name": "seleniumgenic",
+  "version": "1.0.0",
+  "description": "Provides Page and Page Component classes and other utilies for working with Selenium",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codegenic-works/seleniumgenic.git"
+  },
+  "author": "Codegenic Works",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codegenic-works/seleniumgenic/issues"
+  },
+  "homepage": "https://github.com/codegenic-works/seleniumgenic#readme"
+}
