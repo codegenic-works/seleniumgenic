@@ -246,6 +246,7 @@ class Component {
      * Types a key sequence on the DOM element that this Component represents.
      * @see {@link https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/index_exports_WebElement.html#sendKeys}
      * @param  {...any} args The sequence of keys to type.
+     * @returns {Promise<undefined>}
      */
     sendKeys(...args) {
         return this.element.sendKeys(args);
