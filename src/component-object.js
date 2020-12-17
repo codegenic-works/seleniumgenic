@@ -20,8 +20,8 @@ class Component {
      * });
      */
     constructor({ driver, by, scope = driver, webElement }) {
-        if (!driver) throw new Error('A driver must be provied to create a Component');
-        if (!webElement && !by) throw new Error('Either the "webElement" or "by" property must be provied to create a Component');
+        if (!driver) throw new Error('A driver must be provided to create a Component');
+        if (!webElement && !by) throw new Error('Either the "webElement" or "by" property must be provided to create a Component');
 
         this._element = webElement;
         this._driver = driver;
@@ -51,7 +51,7 @@ class Component {
     }
 
     /**
-     * Performs a contenxt/right click on this Component.
+     * Performs a context/right click on this Component.
      * @returns {Promise<undefined>}
      */
     contextClick() {
@@ -263,7 +263,7 @@ class Component {
     /**
      * Takes a screenshot of visible area of this Component.
      * @param {Boolean} [scroll] Indicates if the Component should be scrolled into view to take the screenshot.
-     * @returns {Promsie<String>} Resolves to the base-64 encoded PNG.
+     * @returns {Promise<String>} Resolves to the base-64 encoded PNG.
      */
     takeScreenshot(scroll) {
         return this.element.takeScreenshot(scroll);
@@ -271,7 +271,7 @@ class Component {
 
     /**
      * Waits until the Component is displayed.
-     * @param {Number} [timeout=10000] The max amout of time (ms) to wait for the condition to be true.
+     * @param {Number} [timeout=10000] The max amount of time (ms) to wait for the condition to be true.
      * @returns {Promise<undefined>}
      */
     async waitUntilIsDisplayed(timeout = 10000) {
@@ -281,8 +281,8 @@ class Component {
 
     /**
      * Waits until the Component is enabled.
-     * @param {Number} [timeout=10000] The max amout of time (ms) to wait for the condition to be true.
-     * @returns {Promsie<undefined>}
+     * @param {Number} [timeout=10000] The max amount of time (ms) to wait for the condition to be true.
+     * @returns {Promise<undefined>}
      */
     async waitUntilIsEnabled(timeout = 10000) {
         const self = this;
@@ -291,7 +291,7 @@ class Component {
 
     /**
      * Wait until the Component is present.
-     * @param {Number} [timeout=10000] The max amout of time (ms) to wait for the condition to be true.
+     * @param {Number} [timeout=10000] The max amount of time (ms) to wait for the condition to be true.
      * @returns {Promise<undefined>}
      */
     async waitUntilIsPresent(timeout = 10000) {
@@ -301,7 +301,7 @@ class Component {
 
     /**
      * Wait until the Component is selected.
-     * @param {Number} [timeout=10000] The max amout of time (ms) to wait for the condition to be true.
+     * @param {Number} [timeout=10000] The max amount of time (ms) to wait for the condition to be true.
      * @returns {Promise<undefined>}
      */
     async waitUntilIsSelected(timeout = 10000) {

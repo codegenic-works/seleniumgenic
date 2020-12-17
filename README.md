@@ -1,7 +1,7 @@
 # seleniumgenic
-Utilities to improve projects that utilize [selenium-webdriver](https://www.selenium.dev/selenium/docs/api/javascript/index.html). Provides foundational classes for Page and Page Component Objects to help modularize and organize code which leads to improved readbility, maintainability, and reusability. Also provides other utilies to aid in common tasks/scenarios.
+Utilities to improve projects that utilize [selenium-webdriver](https://www.selenium.dev/selenium/docs/api/javascript/index.html). Provides foundational classes for Page and Page Component Objects to help modularize and organize code which leads to improved readability, maintainability, and reusability. Also provides other utilities to aid in common tasks/scenarios.
 
-Implemented in an unopinionated way providing an an easy to understand and use API.
+Implemented in an un-opinionated way providing an easy to understand and use API.
 
 # Install
 
@@ -140,7 +140,7 @@ const LoginPage = Require('./login-page');
 
 # Details
 
-`seleniumgenic` has zero dependencies. It mearly takes in a given Selenium [WebDriver](https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/index_exports_WebDriver.html) instance and works with it's API. Since the suites of core Selenium packages are constantly updating and only work with the latest versions of browsers, it will be the aim to keep `seleniumgenic` always working with the latest versions of the [selenium-webdriver](https://www.selenium.dev/selenium/docs/api/javascript/index.html).
+`seleniumgenic` has zero dependencies. It just takes in a given Selenium [WebDriver](https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/index_exports_WebDriver.html) instance and works with it's API. Since the suites of core Selenium packages are constantly updating and only work with the latest versions of browsers, it will be the aim to keep `seleniumgenic` always working with the latest versions of the [selenium-webdriver](https://www.selenium.dev/selenium/docs/api/javascript/index.html).
 
 ## Component Objects
 
@@ -174,7 +174,7 @@ Clicks this Component.
 
 ### contextClick() => Promise<undefined>
 
-Performs a contenxt/right click on this Component.
+Performs a context/right click on this Component.
 
 ### createComponent(props) => Component
 
@@ -224,7 +224,7 @@ Gets the Components HTML tag name.
 
 Gets the text contained within this Component. The default is to get the text as it is visually displayed to the user. The 'raw' flag can be used to ge the text as it is provided to the HTML of the page.
 
-- `raw`: Boolean, flag that indicates if the text shoudl be retrieved in its raw form.
+- `raw`: Boolean, flag that indicates if the text should be retrieved in its raw form.
 
 ### hoverClick() => Promise<undefined>
 
@@ -264,25 +264,25 @@ Takes a screenshot of visible area of this Component and returns the base-64 enc
 
 Waits until the Component is displayed.
 
-- `timeout`: The max amout of time (ms) to wait for the condition to be true. Optional, default is 10000.
+- `timeout`: The max amount of time (ms) to wait for the condition to be true. Optional, default is 10000.
 
 ### waitUntilIsEnabled(timeout = 10000) => Promise<undefined>
 
 Waits until the Component is enabled.
 
-- `timeout`: The max amout of time (ms) to wait for the condition to be true. Optional, default is 10000.
+- `timeout`: The max amount of time (ms) to wait for the condition to be true. Optional, default is 10000.
 
 ### waitUntilIsPresent(timeout = 10000) => Promise<undefined>
 
 Waits until the Component is present.
 
-- `timeout`: The max amout of time (ms) to wait for the condition to be true. Optional, default is 10000.
+- `timeout`: The max amount of time (ms) to wait for the condition to be true. Optional, default is 10000.
 
 ### waitUntilIsSelected(timeout = 10000) => Promise<undefined>
 
 Waits until the Component is selected.
 
-- `timeout`: The max amout of time (ms) to wait for the condition to be true. Optional, default is 10000.
+- `timeout`: The max amount of time (ms) to wait for the condition to be true. Optional, default is 10000.
 
 ## Page Objects
 
