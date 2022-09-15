@@ -38,8 +38,7 @@ class Page {
     createComponent({ by, componentClass = Component }) {
         return new componentClass({
             driver: this._driver,
-            by,
-            scope: this
+            by
         });
     }
 

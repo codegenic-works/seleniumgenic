@@ -1,6 +1,6 @@
 {
   "name": "seleniumgenic",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Utilities to improve projects that utilize selenium-webdriver",
   "main": "index.js",
   "repository": {
