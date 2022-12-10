@@ -62,5 +62,7 @@
 
     /* Advanced Options */
     "resolveJsonModule": true                 /* Include modules imported with '.json' extension */
-  }
+  },
+  "exclude": ["jest.config.ts"],
+  "include": ["src/"]
 }
