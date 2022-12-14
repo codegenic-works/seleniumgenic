@@ -3,7 +3,7 @@ import { IRectangle, ThenableWebDriver, WebDriver } from 'selenium-webdriver';
 /**
  * Window Sizes.
  */
-export const enum WindowSize {
+export enum WindowSize {
     /**
      * Window full screen mode.
      */
