@@ -18,12 +18,15 @@ export enum WindowSize {
     Minimized
 }
 
+/**
+ * Represents a Web Browser.
+ */
 export class Browser {
     private driver: WebDriver | ThenableWebDriver;
 
     /**
      * Creates a Browser instance.
-     * @param param0 options - Options for the Browser instance.
+     * @param options - Options for the Browser instance.
      */
     public constructor({
         driver
@@ -40,7 +43,7 @@ export class Browser {
      * Closes the Browser window and invalidates the WebDriver session.
      * @returns {Promise<void>}
      */
-    public close(): Promise<void> {
+    public quit(): Promise<void> {
         return this.driver.quit();
     }
 
