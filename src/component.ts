@@ -33,7 +33,7 @@ export interface IComponentConfig {
 export class Component {
     /**
      * Creates a Page Object Component instance.
-     * @param options - Options for the Component instance.
+     * @param config Configuration of the Component instance.
      */
     constructor({ locator, driver, scope }: IComponentConfig) {
         this._locator = locator;

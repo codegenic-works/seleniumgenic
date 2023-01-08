@@ -67,6 +67,7 @@ export class SeleniumStubs {
         findElement: this.webElementPromisePartial as WebElementPromise,
         findElements: [this.webElementStub],
         getCurrentUrl: 'https://www.codegenicworks.com',
+        getTitle: 'The Page Title',
         takeScreenshot: 'some base64 encoded string'
     };
 
@@ -130,6 +131,8 @@ export class SeleniumStubs {
         this.webDriverStub.getCurrentUrl.resolves(
             this.webDriverResults.getCurrentUrl
         );
+
+        this.webDriverStub.getTitle.resolves(this.webDriverResults.getTitle);
 
         this.webDriverStub.manage.returns(this.optionsPartial as Options);
 
